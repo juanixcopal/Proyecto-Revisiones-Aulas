@@ -5,6 +5,7 @@ import {
   // MdCardGiftcard,
   MdLoyalty,
   TiCodeOutline,
+  MdSettings,
   MdQuestionAnswer,
 } from 'react-icons/md';
 import NotificationSystem from 'react-notification-system';
@@ -26,31 +27,6 @@ class MainLayout extends React.Component {
   componentDidMount() {
     this.checkBreakpoint(this.props.breakpoint);
 
-    // setTimeout(() => {
-    //   if (!this.notificationSystem) {
-    //     return;
-    //   }
-
-    //   this.notificationSystem.addNotification({
-    //     title: <MdImportantDevices />,
-    //     message: 'Bienvenido a la Plataforma!',
-    //     level: 'info',
-    //   });
-    // }, 1500);
-
-    // setTimeout(() => {
-    //   if (!this.notificationSystem) {
-    //     return;
-    //   }
-
-    //   this.notificationSystem.addNotification({
-    //     title: <MdLoyalty />,
-    //     message:
-    //       'PGMA es una plataforma propia del Equipo de Intervención Ágil',
-    //     level: 'info',
-    //   });
-    // }, 2500);
-
     setTimeout(() => {
       if (!this.notificationSystem) {
         return;
@@ -62,7 +38,20 @@ class MainLayout extends React.Component {
           'La plataforma aún se encuentra en desarrollo',
         level: 'info',
       });
-    }, 1500);
+    }, 500);
+
+    setTimeout(() => {
+      if (!this.notificationSystem) {
+        return;
+      }
+
+      this.notificationSystem.addNotification({
+        title: <MdSettings />,
+        message:
+          'Algunas funciones aún no se encuentran en funcionamiento',
+        level: 'info',
+      });
+    }, 1000);
   }
 
   // close sidebar when

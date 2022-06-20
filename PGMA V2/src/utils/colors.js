@@ -35,6 +35,7 @@ export const getColor = (availableColor = 'primary') => {
 };
 
 export const getThemeColors = () => [
+  'searchbar',
   'primary',
   'secondary',
   'success',

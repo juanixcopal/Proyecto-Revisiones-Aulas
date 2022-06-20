@@ -85,6 +85,7 @@ class Header extends React.Component {
             <MdClearAll size={25} />
           </Button>
         </Nav>
+        
         <Nav navbar>
           <SearchInput />
         </Nav>
@@ -95,13 +96,13 @@ class Header extends React.Component {
               {isNotificationConfirmed ? (
                 <MdNotificationsNone
                   size={25}
-                  className="text-secondary can-click"
+                  className="text-searchbar can-click"
                   onClick={this.toggleNotificationPopover}
                 />
               ) : (
                 <MdNotificationsActiveWithBadge
                   size={25}
-                  className="text-secondary can-click animated swing infinite"
+                  className="text-searchbar can-click animated swing infinite"
                   onClick={this.toggleNotificationPopover}
                 />
               )}
@@ -142,22 +143,22 @@ class Header extends React.Component {
                 >
                   <ListGroup flush>
                     <ListGroupItem tag="button" action className="border-light">
-                      <MdPersonPin /> Profile
+                      <MdPersonPin /> Perfil
                     </ListGroupItem>
                     <ListGroupItem tag="button" action className="border-light">
-                      <MdInsertChart /> Stats
+                      <MdInsertChart /> Estadísticas
                     </ListGroupItem>
                     <ListGroupItem tag="button" action className="border-light">
-                      <MdMessage /> Messages
+                      <MdMessage /> Mensajes
                     </ListGroupItem>
                     <ListGroupItem tag="button" action className="border-light">
-                      <MdSettingsApplications /> Settings
+                      <MdSettingsApplications /> Ajustes
                     </ListGroupItem>
                     <ListGroupItem tag="button" action className="border-light">
-                      <MdHelp /> Help
+                      <MdHelp /> Ayuda
                     </ListGroupItem>
                     <ListGroupItem tag="button" action className="border-light">
-                      <MdExitToApp /> Signout
+                      <MdExitToApp /> Cerrar Sesión
                     </ListGroupItem>
                   </ListGroup>
                 </UserCard>

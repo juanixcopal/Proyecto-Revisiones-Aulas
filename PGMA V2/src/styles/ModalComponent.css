@@ -1,0 +1,32 @@
+.Formulario label{
+    font-size: 25px;
+    padding: 0 0 10px 0;
+}
+
+.Formulario .exito {
+	text-align: center;
+	font-size: 20px;
+	padding-top: 20px;
+	color: #02a802;
+}
+
+.Send{
+    display: block;
+    padding: 10px 30px;
+    border-radius: 100px;
+    color: black;
+    border: none;
+    background: #999;
+    cursor: pointer;
+    font-weight: 500;
+    transition: .3s ease all;
+    float: right;
+}
+
+.Send:hover{
+    background: #4f535a;
+}
+
+.Formulario{
+    padding: 0 0 20px 0;
+}

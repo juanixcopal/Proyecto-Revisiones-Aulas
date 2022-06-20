@@ -56,7 +56,7 @@ const App = (props) => {
                 <Route exact path="/" component={DashboardPage} />
                 <Route exact path="/login-modal" component={AuthModalPage} />
                 <Route exact path="/buttons" component={ButtonPage} />
-                <Route exact path="/cards" component={CardPage} />
+                <Route exact path="/chromebooks" component={CardPage} />
                 <Route exact path="/widgets" component={WidgetPage} />
                 <Route exact path="/typography" component={TypographyPage} />
                 <Route exact path="/alerts" component={AlertPage} />
@@ -72,7 +72,7 @@ const App = (props) => {
                 <Route exact path="/modals" component={ModalPage} />
                 <Route exact path="/forms" component={FormPage} />
                 <Route exact path="/input-groups" component={InputGroupPage} />
-                <Route exact path="/charts" component={ChartPage} />
+                <Route exact path="/inventario" component={ChartPage} />
               </React.Suspense>
             </MainLayout>
             <Redirect to="/" />

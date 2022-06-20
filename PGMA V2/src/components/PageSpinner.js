@@ -12,6 +12,7 @@ const PageSpinner = ({ color = 'primary' }) => {
 
 PageSpinner.propTypes = {
   color: PropTypes.oneOf([
+    'searchbar',
     'primary',
     'secondary',
     'success',

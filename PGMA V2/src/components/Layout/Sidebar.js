@@ -86,8 +86,8 @@ const sidebarBackground = {
 
 const navItems = [
   { to: '/', name: 'Plantas', exact: true, Icon: MdChromeReaderMode },
-  { to: '/cards', name: 'Chromebooks', exact: false, Icon: MdComputer },
-  { to: '/charts', name: 'Inventario', exact: false, Icon: MdAssignmentTurnedIn },
+  { to: '/chromebooks', name: 'Chromebooks', exact: false, Icon: MdComputer },
+  { to: '/inventario', name: 'Inventario', exact: false, Icon: MdAssignmentTurnedIn },
   // { to: '/widgets', name: 'widgets', exact: false, Icon: MdWidgets },
 ];
 

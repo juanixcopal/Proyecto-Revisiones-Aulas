@@ -14,6 +14,7 @@ export const overlayCards = [
 ];
 
 export const bgCards = [
+  { color: 'searchbar'},
   { color: 'primary' },
   { color: 'secondary' },
   { color: 'info' },
@@ -23,6 +24,7 @@ export const bgCards = [
 ];
 
 export const gradientCards = [
+  { color: 'searchbar'},
   { color: 'primary' },
   { color: 'secondary' },
   { color: 'info' },

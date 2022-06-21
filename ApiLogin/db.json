@@ -1,0 +1,20 @@
+{
+    "usuarios":[
+        {
+            "id": 1,
+            "apellido1": "Admin",
+            "apellido2": "Admin",
+            "nombre": "Admin",
+            "username": "administrador",
+            "password": "ba435d7879588cb5193ce62d4b94898b"
+        },
+        {
+            "id": 2,
+            "apellido1": "Ixcopal",
+            "apellido2": "San José",
+            "nombre": "Juan",
+            "username": "juan.ixcopal",
+            "password": "ab93597fee350a59fa96f9813e1b965c"
+        }
+    ]
+}

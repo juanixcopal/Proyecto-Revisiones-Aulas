@@ -1,4 +1,4 @@
-import logo200Image from 'assets/img/logo/logo_200.png';
+import LogoEIA from 'assets/img/logo/Logo_EIA.png';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Button, Form, FormGroup, Input, Label } from 'reactstrap';
@@ -54,9 +54,9 @@ class AuthForm extends React.Component {
         {showLogo && (
           <div className="text-center pb-4">
             <img
-              src={logo200Image}
+              src={LogoEIA}
               className="rounded"
-              style={{ width: 60, height: 60, cursor: 'pointer' }}
+              style={{ height: 60, cursor: 'pointer' }}
               alt="logo"
               onClick={onLogoClick}
             />
@@ -79,7 +79,7 @@ class AuthForm extends React.Component {
         <FormGroup check>
           <Label check>
             <Input type="checkbox" />{' '}
-            {this.isSignup ? 'Agree the terms and policy' : 'Remember me'}
+            {this.isSignup ? 'Agree the terms and policy' : 'Recordarme'}
           </Label>
         </FormGroup>
         <hr />
@@ -90,22 +90,6 @@ class AuthForm extends React.Component {
           onClick={this.handleSubmit}>
           {this.renderButtonText()}
         </Button>
-
-        <div className="text-center pt-1">
-          <h6>or</h6>
-          <h6>
-            {this.isSignup ? (
-              <a href="#login" onClick={this.changeAuthState(STATE_LOGIN)}>
-                Login
-              </a>
-            ) : (
-              <a href="#signup" onClick={this.changeAuthState(STATE_SIGNUP)}>
-                Signup
-              </a>
-            )}
-          </h6>
-        </div>
-
         {children}
       </Form>
     );
@@ -130,15 +114,15 @@ AuthForm.propTypes = {
 AuthForm.defaultProps = {
   authState: 'LOGIN',
   showLogo: true,
-  usernameLabel: 'Email',
+  usernameLabel: 'Usuario',
   usernameInputProps: {
-    type: 'email',
-    placeholder: 'your@email.com',
+    type: 'text',
+    placeholder: 'nombre.apellido',
   },
-  passwordLabel: 'Password',
+  passwordLabel: 'Contraseña',
   passwordInputProps: {
     type: 'password',
-    placeholder: 'your password',
+    placeholder: 'Contraseña',
   },
   confirmPasswordLabel: 'Confirm Password',
   confirmPasswordInputProps: {

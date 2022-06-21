@@ -3,13 +3,21 @@ import React from 'react';
 import { getColor } from 'utils/colors';
 import { randomNum } from 'utils/demos';
 
-import { Row, Col, Card, CardHeader, CardBody } from 'reactstrap';
 
-import { Line, Pie, Doughnut, Bar, Radar, Polar } from 'react-chartjs-2';
+import Cookies from 'universal-cookie'
+
+
+
+
+// import { Row, Col, Card, CardHeader, CardBody } from 'reactstrap';
+
+// import { Line, Pie, Doughnut, Bar, Radar, Polar } from 'react-chartjs-2';
 
 import Page from 'components/Page';
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+const baseUrl="http://localhost:3002/usuarios";
+const cookies = new Cookies;
 
 const genLineData = (moreData = {}, moreData2 = {}) => {
   return {
@@ -71,6 +79,9 @@ const genPieData = () => {
 };
 
 const ChartPage = () => {
+  console.log('id' + cookies.get('id'));
+  console.log('nombre: ' +  cookies.get('nombre'));
+  console.log('apellido1: ' + cookies.get('apellido1'));
   return (
     <Page title="Inventario" breadcrumbs={[{ name: 'Inventario', active: true }]}>
       {/* <Row>

@@ -3,6 +3,8 @@ import { GetAulas } from '../helpers/GetAulas.js'
 import ModalComponent from '../components/ModalComponent.js'
 import '../styles/FilteredClassroom.css'
 
+import { AiOutlineCheckSquare, AiFillCheckSquare } from "react-icons/ai";
+
 const FilteredClassroom = ({Planta}) =>{
     
     const [estadoModal1, cambiarEstadoModal1] = useState(false);
@@ -36,7 +38,7 @@ const FilteredClassroom = ({Planta}) =>{
             {state.data.map((element)=>{
                 return(
                     <div className='ContButton'>
-                            <button  className="ClasBtn" id={element.id} onClick={() => toggle({element})} >Aula {element.Planta}.{element.Numero}</button>
+                            <button  className="ClasBtn" id={element.id} onClick={() => toggle({element})} >Aula {element.Planta}.{element.Numero} <AiFillCheckSquare/> </button>
                     </div>
                 )
             })}

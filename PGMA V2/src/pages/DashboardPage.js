@@ -42,7 +42,7 @@ const DashboardPage = () => {
       breadcrumbs={[{ name: 'Plantas', active: true }]}
     >
       <Row>
-        <div className='container'>
+        <div className='containers'>
           <div className='tabs'>
             {tabs.map((tab, i) =>
               <button key={i} id={tab.id} name={tab.planta} disabled={currentTab === `${tab.id}`} onClick={(handleTabClick)}>{tab.tabTitle}</button>

@@ -3,6 +3,8 @@ import VentanaModal from './VentanaModal';
 import { Field, Formik } from "formik";
 import { Container, Table } from "reactstrap";
 import { GetInventario } from '../helpers/GetInventario'
+import { FiSend } from 'react-icons/fi'
+import { FcInspection } from 'react-icons/fc'
 import '../styles/ModalComponent.css'
 
 const ModalComponent = ({ cambiarEstadoModal1, estadoModal1, dataModal }) =>{
@@ -93,6 +95,7 @@ const ModalComponent = ({ cambiarEstadoModal1, estadoModal1, dataModal }) =>{
                           })}
                         </tbody>
                       </Table>
+                      <br></br>
                         <div>
                           <input 
                           type='text' 
@@ -107,8 +110,9 @@ const ModalComponent = ({ cambiarEstadoModal1, estadoModal1, dataModal }) =>{
                     {FormEnviado && (
                       <p className="exito">Inventario enviado con éxito!</p>
                     )}
+                    <br></br>
                     <button className="Send" type="submit">
-                      Enviar
+                      Enviar <FiSend />
                     </button>
                     <br></br>
                   </form>

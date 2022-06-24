@@ -12,6 +12,7 @@ const PageSpinner = ({ color = 'primary' }) => {
 
 PageSpinner.propTypes = {
   color: PropTypes.oneOf([
+    'userCard',
     'searchbar',
     'primary',
     'secondary',

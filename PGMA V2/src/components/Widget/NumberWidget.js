@@ -44,6 +44,7 @@ NumberWidget.propTypes = {
     PropTypes.number.isRequired,
   ]),
   color: PropTypes.oneOf([
+    'userCard',
     'primary',
     'secondary',
     'success',

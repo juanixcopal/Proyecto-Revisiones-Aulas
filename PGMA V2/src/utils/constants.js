@@ -35,7 +35,7 @@ export const NOTIFICATION_SYSTEM_STYLE = {
 
     info: {
       borderTop: 0,
-      background: 'linear-gradient(to right, #6a82fb, #fc5c7d)',
+      background: 'linear-gradient(to right, #3C3C3C, #B1B1B1)',
       WebkitBoxShadow: 0,
       MozBoxShadow: 0,
       boxShadow: 0,
@@ -50,10 +50,7 @@ export const NOTIFICATION_SYSTEM_STYLE = {
       color: '#fff',
       display: 'inline-flex',
       fontSize: 20,
-      fontWeight: 'bold',
-      // left: '15px',
-      // position: 'absolute',
-      // top: '50%',
+      fontWeight: 'bold'
     },
   },
 

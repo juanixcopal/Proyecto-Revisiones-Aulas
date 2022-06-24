@@ -1,14 +1,15 @@
 // colors
 
 .bg-gradient-theme {
-  background: linear-gradient(to bottom, theme-color("primary"), theme-color("secondary"));
+  background: linear-gradient(to bottom, theme-color("userCard"), theme-color("searchbar"));
+  width: 290px;
 }
 .bg-gradient-theme-top {
-  background: linear-gradient(to top, theme-color("primary"), theme-color("secondary"));
+  background: linear-gradient(to top, theme-color("userCard"), theme-color("searchbar"));
 }
 .bg-gradient-theme-left {
-  background: linear-gradient(to left, theme-color("primary"), theme-color("secondary"));
+  background: linear-gradient(to left, theme-color("userCard"), theme-color("searchbar"));
 }
 .bg-gradient-theme-right {
-  background: linear-gradient(to right, theme-color("primary"), theme-color("secondary"));
+  background: linear-gradient(to right, theme-color("userCard"), theme-color("searchbar"));
 }

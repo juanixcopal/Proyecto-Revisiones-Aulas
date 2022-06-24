@@ -1,10 +1,10 @@
 import FilteredClassroom from '../components/FilteredClassroom.js';
 import React, { useState } from 'react';
-import '../styles/DashboardPage.css'
+import '../styles/PlantasPage.css'
 import Page from 'components/Page';
 import { Row} from 'reactstrap';
 
-const DashboardPage = () => {
+const PlantasPage = () => {
 
   const [planta, setPlanta] = useState('1');
   const [currentTab, setCurrentTab] = useState('1');
@@ -37,7 +37,7 @@ const DashboardPage = () => {
 
   return (
     <Page
-      className="DashboardPage"
+      className="PlantasPage"
       title="Plantas"
       breadcrumbs={[{ name: 'Plantas', active: true }]}
     >
@@ -63,4 +63,4 @@ const DashboardPage = () => {
     </Page>
   );
 }
-export default DashboardPage;
+export default PlantasPage;

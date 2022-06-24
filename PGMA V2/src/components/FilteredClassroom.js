@@ -38,7 +38,7 @@ const FilteredClassroom = ({Planta}) =>{
             {state.data.map((element)=>{
                 return(
                     <div className='ContButton'>
-                            <button  className="ClasBtn" id={element.id} onClick={() => toggle({element})} >Aula {element.Planta}.{element.Numero} <AiFillCheckSquare/> </button>
+                            <button  className="ClasBtn" id={element.id} onClick={() => toggle({element})} >Aula {element.Planta}.{element.Numero} <AiOutlineCheckSquare/> </button>
                     </div>
                 )
             })}

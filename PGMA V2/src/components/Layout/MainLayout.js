@@ -1,10 +1,6 @@
 import { Content, Footer, Header, Sidebar } from 'components/Layout';
 import React from 'react';
 import {
-  MdImportantDevices,
-  // MdCardGiftcard,
-  MdLoyalty,
-  TiCodeOutline,
   MdSettings,
   MdQuestionAnswer,
 } from 'react-icons/md';
@@ -27,31 +23,31 @@ class MainLayout extends React.Component {
   componentDidMount() {
     this.checkBreakpoint(this.props.breakpoint);
 
-    setTimeout(() => {
-      if (!this.notificationSystem) {
-        return;
-      }
+    // setTimeout(() => {
+    //   if (!this.notificationSystem) {
+    //     return;
+    //   }
 
-      this.notificationSystem.addNotification({
-        title: <MdQuestionAnswer />,
-        message:
-          'La plataforma aún se encuentra en desarrollo',
-        level: 'info',
-      });
-    }, 500);
+    //   this.notificationSystem.addNotification({
+    //     title: <MdQuestionAnswer />,
+    //     message:
+    //       'La plataforma aún se encuentra en desarrollo',
+    //     level: 'info',
+    //   });
+    // }, 500);
 
-    setTimeout(() => {
-      if (!this.notificationSystem) {
-        return;
-      }
+    // setTimeout(() => {
+    //   if (!this.notificationSystem) {
+    //     return;
+    //   }
 
-      this.notificationSystem.addNotification({
-        title: <MdSettings />,
-        message:
-          'Algunas funciones aún no se encuentran en funcionamiento',
-        level: 'info',
-      });
-    }, 1000);
+    //   this.notificationSystem.addNotification({
+    //     title: <MdSettings />,
+    //     message:
+    //       'Algunas funciones aún no se encuentran en funcionamiento',
+    //     level: 'info',
+    //   });
+    // }, 1000);
   }
 
   // close sidebar when

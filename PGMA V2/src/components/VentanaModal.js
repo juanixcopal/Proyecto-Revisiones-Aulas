@@ -1,5 +1,6 @@
 import React from "react";
 import '../styles/VentanaModal.css'
+import { FcViewDetails } from 'react-icons/fc'
 
 const VentanaModal = ({children, estado, cambiarEstado, titulo = 'Sin titulo'}) =>{
     return(
@@ -9,7 +10,7 @@ const VentanaModal = ({children, estado, cambiarEstado, titulo = 'Sin titulo'}) 
                 <div className="contenedorModal">
 
                     <div className="encabezadoModal" >
-                        <h3>{titulo}</h3>
+                        <h3>{titulo} <FcViewDetails fontSize="20px" /> </h3>
                     </div>
 
                     <button className="botonCerrar" onClick={() => cambiarEstado(false)} >

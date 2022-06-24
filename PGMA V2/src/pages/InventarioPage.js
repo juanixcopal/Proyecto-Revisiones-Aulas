@@ -79,9 +79,6 @@ const genPieData = () => {
 };
 
 const ChartPage = () => {
-  console.log('id' + cookies.get('id'));
-  console.log('nombre: ' +  cookies.get('nombre'));
-  console.log('apellido1: ' + cookies.get('apellido1'));
   return (
     <Page title="Inventario" breadcrumbs={[{ name: 'Inventario', active: true }]}>
       {/* <Row>

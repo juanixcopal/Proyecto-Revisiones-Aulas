@@ -1,7 +1,6 @@
 import Avatar from 'components/Avatar';
 import { UserCard } from 'components/Card';
 import Notifications from 'components/Notifications';
-import SearchInput from 'components/SearchInput';
 import { notificationsData } from 'demos/header';
 import withBadge from 'hocs/withBadge';
 import React from 'react';
@@ -16,6 +15,11 @@ import {
   MdPersonPin,
   MdSettingsApplications,
 } from 'react-icons/md';
+
+import {
+  HiDocumentReport
+} from 'react-icons/hi'
+
 import {
   Button,
   ListGroup,
@@ -34,7 +38,7 @@ const bem = bn.create('header');
 
 const MdNotificationsActiveWithBadge = withBadge({
   size: 'md',
-  color: 'primary',
+  color: 'notification',
   style: {
     top: -10,
     right: -10,
@@ -42,7 +46,7 @@ const MdNotificationsActiveWithBadge = withBadge({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  children: <small>1</small>,
+  children: <small>2</small>,
 })(MdNotificationsActive);
 
 class Header extends React.Component {
@@ -84,10 +88,6 @@ class Header extends React.Component {
           <Button outline onClick={this.handleSidebarControlButton}>
             <MdClearAll size={25} />
           </Button>
-        </Nav>
-        
-        <Nav navbar>
-          <SearchInput />
         </Nav>
 
         <Nav navbar className={bem.e('nav-right')}>
@@ -136,7 +136,7 @@ class Header extends React.Component {
             >
               <PopoverBody className="p-0 border-light">
                 <UserCard
-                  title="Admin"
+                  title="Administrador"
                   subtitle="soporte.informatico@unetlantico.es"
                   text="Administrador de la plataforma"
                   className="border-light"
@@ -146,16 +146,10 @@ class Header extends React.Component {
                       <MdPersonPin /> Perfil
                     </ListGroupItem>
                     <ListGroupItem tag="button" action className="border-light">
-                      <MdInsertChart /> Estadísticas
-                    </ListGroupItem>
-                    <ListGroupItem tag="button" action className="border-light">
-                      <MdMessage /> Mensajes
+                      <HiDocumentReport /> Informes
                     </ListGroupItem>
                     <ListGroupItem tag="button" action className="border-light">
                       <MdSettingsApplications /> Ajustes
-                    </ListGroupItem>
-                    <ListGroupItem tag="button" action className="border-light">
-                      <MdHelp /> Ayuda
                     </ListGroupItem>
                     <ListGroupItem tag="button" action className="border-light">
                       <MdExitToApp /> Cerrar Sesión

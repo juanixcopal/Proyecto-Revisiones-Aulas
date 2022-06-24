@@ -1,23 +1,19 @@
-import user1Image from 'assets/img/users/Circle Logo EIA.png';
-import user2Image from 'assets/img/users/100_2.jpg';
-import user3Image from 'assets/img/users/100_3.jpg';
-import user4Image from 'assets/img/users/100_4.jpg';
-import user5Image from 'assets/img/users/100_5.jpg';
+import notification1 from '../assets/img/notification/info.png'
+import notification2 from '../assets/img/notification/settings.png'
 
 export const notificationsData = [
   {
     id: 1,
-    avatar: user1Image,
+    avatar: notification1,
     message: 'Estamos trabajando para dar un mejor servicio',
-    date: '1 min ago',
+    date: '1 seconds ago',
   },
-  // ,
-  // {
-  //   id: 2,
-  //   avatar: user2Image,
-  //   message: 'Jane mentioned you here',
-  //   date: '1 hour ago',
-  // },
+  {
+    id: 2,
+    avatar: notification2,
+    message: 'Algunas funciones no se encuentran disponibles',
+    date: '1 seconds ago',
+  },
   // {
   //   id: 3,
   //   avatar: user3Image,

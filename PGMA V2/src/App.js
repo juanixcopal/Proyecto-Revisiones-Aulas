@@ -9,7 +9,8 @@ import './styles/reduction.scss';
 const Chromebooks = React.lazy(() => import('pages/ChromebooksPage'));
 const ChartPage = React.lazy(() => import('pages/InventarioPage'));
 const Plantas = React.lazy(() => import('pages/PlantasPage'));
-const Login = React.lazy(() => import('./pages/LoginPage') )
+const Login = React.lazy(() => import('./pages/LoginPage') );
+const Error404 = React.lazy(() => import('./pages/PageNotFound'));
 
 const getBasename = () => {
   return `/${process.env.PUBLIC_URL.split('/').pop()}`;
